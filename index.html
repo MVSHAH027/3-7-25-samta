@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જૈન ડિજિટલ પાઠશાળા | Jain Digital Pathshala</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #00796b; /* Teal */
+            --secondary-color: #f57c00; /* Orange */
+            --background-color: #fdfaf6;
+            --text-color: #333;
+            --card-bg-color: #ffffff;
+            --header-bg-color: #004d40;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', 'Hind Vadodara', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .lang-switcher {
+            background-color: var(--header-bg-color);
+            padding: 10px 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .lang-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .lang-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .lang-btn.active {
+            background-color: #ffffff;
+            color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .main-container {
+            padding: 20px 15px 40px 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            background-color: var(--card-bg-color);
+            margin-bottom: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 20px;
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .section-body {
+            padding: 20px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23f57c00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>') no-repeat left 5px;
+            padding-left: 30px;
+            margin-bottom: 12px;
+        }
+        
+        ul ul {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        
+        ul ul li {
+             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%2300796b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>') no-repeat left 6px;
+             padding-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+        
+        #english-content {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="lang-switcher">
+        <button id="btn-gu" class="lang-btn active" onclick="switchLanguage('gu')">ગુજરાતી</button>
+        <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">English</button>
+    </div>
+
+    <div class="main-container">
+
+        <!-- Gujarati Content -->
+        <div id="gujarati-content">
+            <div class="content-section">
+                <h2 class="section-title">1. સાચી સુંદરતા: તનની કે મનની?</h2>
+                <div class="section-body">
+                    <h3>પરિચય</h3>
+                    <p>આ વિડિઓ જૈન ડિજિટલ પાઠશાળાના બાળકો માટે બનાવવામાં આવ્યો છે. જેમાં પંડિતજી શાશ્વત સિદ્ધાંતો અને સારા આચરણ વિશે શીખવે છે. આ વિડિઓ આપણને શીખવે છે કે સાચી સુંદરતા બાહ્ય દેખાવમાં નથી, પણ આપણા આત્માની શુદ્ધિ અને સારા ગુણોમાં છે.</p>
+                    
+                    <h3>મુખ્ય બોધપાઠ</h3>
+                    <h4>શરીરની શુદ્ધિ વિરુદ્ધ આત્માની શુદ્ધિ</h4>
+                    <ul>
+                        <li>આપણું શરીર અશુદ્ધિઓથી બનેલું છે, તેથી તેને ગમે તેટલા સાબુ કે અન્ય ઉત્પાદનોથી શુદ્ધ કરી શકાતું નથી.</li>
+                        <li>જેમ કોલસાને સાબુથી ધોઈને સફેદ કરી શકાતો નથી, તેમ શરીરને બાહ્ય ઉત્પાદનોથી સંપૂર્ણપણે શુદ્ધ કરી શકાતું નથી.</li>
+                        <li>આપણું મુખ્ય ધ્યાન શરીરની નહિ, પણ આત્માની શુદ્ધિ પર હોવું જોઈએ.</li>
+                    </ul>
+
+                    <h4>બાહ્ય સૌંદર્ય ઉત્પાદનોનું સત્ય</h4>
+                    <ul>
+                        <li>બજારમાં મળતા સાબુ, ક્રીમ અને પાવડરમાં પ્રાણીઓના હાડકાંનો પાવડર જેવી હિંસક વસ્તુઓ હોઈ શકે છે, જે આપણને સ્નાન કર્યા પછી પણ અશુદ્ધ રાખે છે.</li>
+                        <li>આવા ઉત્પાદનોનો ઉપયોગ કરીને આપણે ધાર્મિક કાર્યો માટે અયોગ્ય બનીએ છીએ.</li>
+                        <li>શરીરની સફાઈ માટે મુલતાની માટી જેવી અહિંસક અને સસ્તી વસ્તુઓનો ઉપયોગ કરવો વધુ સારો છે, જે વાળને પણ મુલાયમ બનાવે છે.</li>
+                    </ul>
+
+                    <h4>સાચી સુંદરતા શું છે?</h4>
+                    <ul>
+                        <li>ક્રીમ અને પાવડર જેવી વસ્તુઓ ફક્ત સુંદરતાનો ભ્રમ પેદા કરે છે.</li>
+                        <li>સાચી સુંદરતા આપણા આંતરિક ગુણોમાંથી આવે છે, જેમ કે નમ્રતા, પ્રામાણિકતા, મહેનત, સહકાર અને સાદગી.</li>
+                        <li>આ ગુણો આપણા આત્માને સુંદર બનાવે છે અને સમાજમાં સકારાત્મક પ્રભાવ પાડે છે.</li>
+                    </ul>
+
+                    <h4>આત્માની શુદ્ધિ કેવી રીતે કરવી?</h4>
+                    <ul>
+                        <li>આત્માની અશુદ્ધિ: રાગ, દ્વેષ, ઘૃણા અને હિંસા જેવા ભાવોથી આત્મા અશુદ્ધ થાય છે.</li>
+                        <li>આત્માની શુદ્ધિ: જ્ઞાન, દર્શન અને વૈરાગ્યથી આત્મા શુદ્ધ થાય છે.</li>
+                        <li>આત્માની શુદ્ધિ માટે જિનવાણીનો અભ્યાસ કરવો, અન્યાય અને અધર્મનો ત્યાગ કરવો અને અહિંસક જીવન જીવવું જરૂરી છે.</li>
+                    </ul>
+
+                    <h3>નિષ્કર્ષ</h3>
+                    <p>આ વિડિઓના અંતમાં, વિદ્યાર્થીઓ પોતાની આંતરિક સુંદરતા વધારવા માટે જિનવાણીનો અભ્યાસ કરવાનો સંકલ્પ કરે છે. આ જ સાચો માર્ગ છે.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">2. સ્માર્ટ બાળકો અને સુપર સ્માર્ટ દાદી: જ્ઞાન અને સંસ્કારનો વારસો</h2>
+                <div class="section-body">
+                    <h3>પરિચય</h3>
+                    <p>આ વિડિયોમાં એક દાદી અને તેમના પૌત્ર-પૌત્રીઓ વચ્ચેના સંબંધ દ્વારા ધાર્મિક શિક્ષણ અને મૂલ્યોનું મહત્વ ખૂબ જ સુંદર રીતે સમજાવવામાં આવ્યું છે. દાદી તેમના બાળકોને સ્માર્ટ બનાવે છે, પણ પોતે ડબલ સ્માર્ટ બનીને તેમને જીવનના અમૂલ્ય પાઠ શીખવે છે.</p>
+
+                    <h3>મુખ્ય શીખ</h3>
+                    <h4>ધાર્મિક શિક્ષણ અને સંસ્કારનું મહત્વ:</h4>
+                    <ul>
+                        <li>ઉનાળાના વેકેશનમાં બાળકો માત્ર રમત-ગમતમાં સમય પસાર ન કરે, પરંતુ ધાર્મિક પ્રવૃત્તિઓમાં પણ ભાગ લે તે જરૂરી છે.</li>
+                        <li>મંદિર દર્શન અને પાઠશાળામાં જવાથી જૈન ધર્મના સિદ્ધાંતો અને મૂલ્યોનું જ્ઞાન મળે છે.</li>
+                    </ul>
+                    
+                    <h4>આધ્યાત્મિક વિકાસને પ્રાથમિકતા:</h4>
+                    <ul>
+                        <li>જીવનમાં રમત-ગમત અને મનોરંજનની સાથે સાથે ધર્મને સમજવા માટે પણ સમય કાઢવો જોઈએ.</li>
+                        <li>સવારમાં સૌથી પહેલા મંદિર દર્શન કરીને પછી જ ભોજન કરવું જોઈએ.</li>
+                    </ul>
+
+                    <h4>જૈન ઓળખનું ગૌરવ:</h4>
+                    <ul>
+                        <li>વિશ્વની વિશાળ વસ્તીમાં જૈનોની સંખ્યા ઓછી હોવા છતાં, આપણો ધર્મ અને વારસો ખૂબ જ મહત્વપૂર્ણ છે.</li>
+                        <li>આપણી જૈન ઓળખ પર ગર્વ લેવો જોઈએ અને તેને ઊંડાણપૂર્વક સમજવાનો પ્રયત્ન કરવો જોઈએ.</li>
+                    </ul>
+
+                    <h4>"ભગવાન" (જ્ઞાની) બનવાનો માર્ગ:</h4>
+                    <ul>
+                        <li>જૈન ધર્મના સિદ્ધાંતોને સમજીને અને તેનું પાલન કરીને કોઈપણ વ્યક્તિ જ્ઞાન પ્રાપ્ત કરી શકે છે અને "ભગવાન" બની શકે છે.</li>
+                        <li>આ વિચાર બાળકોને ધર્મ વિશે વધુ જાણવા માટે પ્રોત્સાહિત કરે છે.</li>
+                    </ul>
+                    
+                    <h4>દૈનિક આધ્યાત્મિક અભ્યાસ:</h4>
+                    <ul>
+                        <li>દરરોજ સવારે નવકાર મંત્રનો જાપ કરવો અને પંચ પરમેષ્ઠિને યાદ કરવા.</li>
+                        <li>એકબીજાને "પ્રણામ" કહીને અભિવાદન કરવું.</li>
+                    </ul>
+
+                    <h4>જ્ઞાન દાનનું મહત્વ:</h4>
+                    <ul>
+                        <li>જ્ઞાનનું દાન એ સૌથી મોટું દાન છે.</li>
+                        <li>ધાર્મિક જ્ઞાનનો પ્રચાર અને પ્રસાર કરવાથી ભગવાન મહાવીરના ઉપદેશો ફેલાવવામાં મદદ મળે છે.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">3. નાની ભૂલો, મોટી શીખ</h2>
+                <div class="section-body">
+                    <p>આ વિડિયોમાંથી મળતી મહત્વની શીખ નીચે મુજબ છે:</p>
+                    
+                    <h3>વડીલો પ્રત્યે આદર</h3>
+                    <ul>
+                        <li>માતા-પિતા અને વડીલો સાથે હંમેશા આદરપૂર્વક વાત કરો, ભલે તમે તેમની સાથે અસંમત હોવ.</li>
+                        <li>યાદ રાખો, માતાપિતા હંમેશા તમારા ભલા માટે જ સલાહ આપે છે.</li>
+                    </ul>
+
+                    <h3>પર્યાવરણની સુરક્ષા</h3>
+                    <ul>
+                        <li>કાગળનો બગાડ કરવો એ પ્રકૃતિ પર અત્યાચાર કરવા સમાન છે, કારણ કે તેના માટે વૃક્ષો કાપવામાં આવે છે.</li>
+                        <li>બિનજરૂરી કાગળનો બગાડ કરીને પર્યાવરણને નુકસાન પહોંચાડવામાં ભાગીદાર ન બનો.</li>
+                    </ul>
+
+                    <h3>વિવેકપૂર્ણ વપરાશ</h3>
+                    <ul>
+                        <li>શિક્ષણ માટે પુસ્તકો અને નોટબુક જરૂરી છે, પરંતુ કાગળનો ખોટો ઉપયોગ કરવાનું ટાળો.</li>
+                        <li>કાગળની બંને બાજુ લખીને અથવા તેનો ફરીથી ઉપયોગ કરીને બગાડ અટકાવી શકાય છે.</li>
+                    </ul>
+
+                    <h3>યોગ્ય અને અયોગ્યની સમજ</h3>
+                    <ul>
+                        <li>જીવનમાં દરેક ભૂલને ટાળવી શક્ય નથી, પરંતુ જાણીજોઈને થતી ભૂલો અને ખોટા કામોથી હંમેશા બચવું જોઈએ.</li>
+                        <li>જે કાર્યોથી કોઈનું નુકસાન થતું હોય, તેવા બિનજરૂરી કાર્યો કરવાનું ટાળો.</li>
+                    </ul>
+
+                    <h3>જ્ઞાનનું મહત્વ</h3>
+                    <ul>
+                        <li>દુનિયામાં સૌથી મોટું દાન જ્ઞાનનું દાન છે.</li>
+                        <li>જ્ઞાન સમાજમાંથી અજ્ઞાનના અંધકારને દૂર કરે છે અને સાચો માર્ગ બતાવે છે.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div id="english-content">
+            <div class="content-section">
+                <h2 class="section-title">1. True Beauty: Of the Body or the Mind?</h2>
+                <div class="section-body">
+                    <h3>Introduction</h3>
+                    <p>This video has been created for the children of Jain Digital Pathshala. In it, Panditji teaches about eternal principles and good conduct. This video teaches us that true beauty does not lie in external appearance, but in the purity of our soul and good qualities.</p>
+                    
+                    <h3>Key Lessons</h3>
+                    <h4>Purity of the Body vs. Purity of the Soul</h4>
+                    <ul>
+                        <li>Our body is made of impurities, so it cannot be purified no matter how much soap or other products are used.</li>
+                        <li>Just as coal cannot be washed white with soap, the body cannot be completely purified with external products.</li>
+                        <li>Our main focus should be on the purity of the soul, not the body.</li>
+                    </ul>
+
+                    <h4>The Truth of External Beauty Products</h4>
+                    <ul>
+                        <li>Soaps, creams, and powders available in the market may contain violent items like animal bone powder, which keep us impure even after bathing.</li>
+                        <li>By using such products, we become unfit for religious activities.</li>
+                        <li>For cleaning the body, it is better to use non-violent and cheap items like Multani Mitti (Fuller's Earth), which also makes the hair soft.</li>
+                    </ul>
+
+                    <h4>What is True Beauty?</h4>
+                    <ul>
+                        <li>Items like creams and powders only create an illusion of beauty.</li>
+                        <li>True beauty comes from our inner qualities, such as humility, honesty, hard work, cooperation, and simplicity.</li>
+                        <li>These qualities make our soul beautiful and create a positive impact on society.</li>
+                    </ul>
+
+                    <h4>How to Purify the Soul?</h4>
+                    <ul>
+                        <li>Impurity of the soul: The soul becomes impure due to feelings like attachment, aversion, hatred, and violence.</li>
+                        <li>Purity of the soul: The soul becomes pure through knowledge, faith, and detachment.</li>
+                        <li>To purify the soul, it is necessary to study the Jinavani (Jain scriptures), renounce injustice and unrighteousness, and live a non-violent life.</li>
+                    </ul>
+
+                    <h3>Conclusion</h3>
+                    <p>At the end of this video, the students take a pledge to study the Jinavani to enhance their inner beauty. This is the true path.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">2. Smart Kids and Super Smart Grandma: The Legacy of Knowledge and Values</h2>
+                <div class="section-body">
+                    <h3>Introduction</h3>
+                    <p>In this video, the importance of religious education and values is explained beautifully through the relationship between a grandmother and her grandchildren. The grandmother makes her children smart, but she herself becomes "double smart" and teaches them precious life lessons.</p>
+
+                    <h3>Key Lessons</h3>
+                    <h4>Importance of Religious Education and Values:</h4>
+                    <ul>
+                        <li>During summer vacation, it is essential that children not only spend time playing but also participate in religious activities.</li>
+                        <li>Visiting the temple and attending Pathshala (religious school) imparts knowledge of Jain principles and values.</li>
+                    </ul>
+
+                    <h4>Prioritizing Spiritual Development:</h4>
+                    <ul>
+                        <li>In life, along with sports and entertainment, time should also be set aside to understand religion.</li>
+                        <li>One should have a meal only after visiting the temple first thing in the morning.</li>
+                    </ul>
+
+                    <h4>Pride in Jain Identity:</h4>
+                    <ul>
+                        <li>Although the number of Jains in the world's vast population is small, our religion and heritage are very important.</li>
+                        <li>We should be proud of our Jain identity and try to understand it deeply.</li>
+                    </ul>
+
+                    <h4>The Path to Becoming "Bhagwan" (Knowledgeable):</h4>
+                    <ul>
+                        <li>By understanding and following the principles of Jainism, any person can attain knowledge and become a "Bhagwan" (knowledgeable one).</li>
+                        <li>This idea encourages children to learn more about their religion.</li>
+                    </ul>
+
+                    <h4>Daily Spiritual Practice:</h4>
+                    <ul>
+                        <li>Chant the Navkar Mantra every morning and remember the Panch Parmeshthi.</li>
+                        <li>Greet each other by saying "Pranam".</li>
+                    </ul>
+
+
+
+                    <h4>Importance of Gifting Knowledge:</h4>
+                    <ul>
+                        <li>The gift of knowledge is the greatest gift of all.</li>
+                        <li>Promoting and disseminating religious knowledge helps in spreading the teachings of Lord Mahavir.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title">3. Small Mistakes, Big Lessons</h2>
+                <div class="section-body">
+                    <p>The important lessons from this video are as follows:</p>
+
+                    <h3>Respect for Elders</h3>
+                    <ul>
+                        <li>Always speak respectfully to parents and elders, even if you disagree with them.</li>
+                        <li>Remember, parents always give advice for your own good.</li>
+                    </ul>
+
+                    <h3>Environmental Protection</h3>
+                    <ul>
+                        <li>Wasting paper is equivalent to an atrocity against nature, as trees are cut down for it.</li>
+                        <li>Do not be a party to harming the environment by wasting paper unnecessarily.</li>
+                    </ul>
+
+                    <h3>Wise Consumption</h3>
+                    <ul>
+                        <li>Books and notebooks are necessary for education, but avoid misusing paper.</li>
+                        <li>Waste can be prevented by writing on both sides of the paper or by reusing it.</li>
+                    </ul>
+
+                    <h3>Understanding Right and Wrong</h3>
+                    <ul>
+                        <li>It is not possible to avoid every mistake in life, but one should always stay away from intentional mistakes and wrongdoings.</li>
+                        <li>Avoid doing unnecessary tasks that could harm someone.</li>
+                    </ul>
+
+                    <h3>Importance of Knowledge</h3>
+                    <ul>
+                        <li>The greatest charity in the world is the charity of knowledge.</li>
+                        <li>Knowledge removes the darkness of ignorance from society and shows the right path.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            const guContent = document.getElementById('gujarati-content');
+            const enContent = document.getElementById('english-content');
+            const btnGu = document.getElementById('btn-gu');
+            const btnEn = document.getElementById('btn-en');
+            const htmlTag = document.documentElement;
+
+            if (lang === 'gu') {
+                guContent.style.display = 'block';
+                enContent.style.display = 'none';
+                btnGu.classList.add('active');
+                btnEn.classList.remove('active');
+                htmlTag.lang = 'gu';
+            } else {
+                guContent.style.display = 'none';
+                enContent.style.display = 'block';
+                btnEn.classList.add('active');
+                btnGu.classList.remove('active');
+                htmlTag.lang = 'en';
+            }
+        }
+    </script>
+
+</body>
+</html>
